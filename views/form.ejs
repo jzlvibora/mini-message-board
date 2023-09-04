@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <a href="/"><button class="btn waves-effect waves-light"  name="action">Back
+        <i class="material-icons right">arrow_back</i>
+    </button>
+</a>
+    <h1 class="header center orange-text">Message Form</h1>
+    
+    <div class="row">
+    <form class="col s12" method="POST" action="/new">
+        <div class="row">
+          <div class="input-field col s6">
+            <input  id="author" type="text" class="validate" name="author">
+            <label for="author">Your Name</label>
+          </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="message" type="text" class="validate" name="message">
+            <label for="message">Message</label>
+          </div>
+        </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
+   
+
+ 
