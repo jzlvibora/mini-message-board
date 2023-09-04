@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.date{
+  font-style: italic;
+  font-size: small;
+}

@@ -2,19 +2,30 @@
 <html>
   <head>
     <title><%= title %></title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Compiled and minified JavaScript -->
+
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Welcome to <%= title %></p>
-    <p>Welcome to <%= title %></p>
-    <ul> <% messageList.forEach(message=>{ %>
-      <li><%= message.text %></li>
-    <% }) %></ul>
-      
-    <!-- <p><%= messageList %></p> -->
-   
-   
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text"><%= title %></h1>
+      <div class="row center">
+        <a href="/new" id="download-button" class="btn-large waves-effect waves-light orange">Add a Message</a>
+      </div>
+      <br><br>
+      <ul class="collection">
+        <% messageList.forEach(message=>{ %>
+          <li class="collection-item avatar">
+            <h5 class="title"><%= message.text %></h5>
+            <p class="cyan-text user"><b><%= message.user %></b></p>
+            <p class="date orange-text"><%= message.added %></p>
+            <a href="#!" class="secondary-content"><i class="material-icons">message</i></a>
+          </li> <% }) %></ul>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
